@@ -1,15 +1,18 @@
-/* Meet */
+/* Meet The Creator*/
 
+/* used image */
 #nav {
     background-image: url(neangart-watercolor-5062356_1920.jpg);
 }
 
+/* used this website https://cssgenerator.org/border-radius-css-generator.html */
 .container {
     border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
 }
 
+/* used this color */
 #title {
     background: #158cba;
 }
