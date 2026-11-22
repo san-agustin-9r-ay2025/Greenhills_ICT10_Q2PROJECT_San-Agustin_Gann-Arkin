@@ -1,0 +1,15 @@
+/* Meet */
+
+#nav {
+    background-image: url(neangart-watercolor-5062356_1920.jpg);
+}
+
+.container {
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+#title {
+    background: #158cba;
+}

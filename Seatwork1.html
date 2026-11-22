@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nickname Atlas</title>
+
+    <!-- START OF CSS -->
+    <link rel="stylesheet" href="Seatwork1.css">
+
+    <!-- START OF BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- START OF PYTHON -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<!-- makes background light -->
+<body class="bg-light">
+    <!-- make header with background light and its content light blue centered text paddled 3-->
+    <header class="bg-light text-info text-center p-3">
+        <!-- make text saying East Asia -->
+        <h1>
+            East Asia
+        </h1>
+    </header>
+    <!-- make div with its width adjustable to different types of screen sizes  while its content like text is centered, paddled 5, and div named with an id "main"-->
+        <div class="container-fluid text-center p-5" id="main">
+            <!-- make a row -->
+            <div class="row">
+                <!-- make a yellow text saying The Nicknam Atlas of East Asia -->
+                <h3 class="text-warning">
+                    The Nickname Atlas of East Asia
+                </h3>
+            </div>
+            <!-- make another row -->
+            <div class="row">
+                <!-- make paragraph -->
+                <p>
+                    every nations earned its nickname: culture-wise, history-wise, religion-wise.
+                </p>
+            </div>
+            <!-- make another row -->
+            <div class="row">
+                <!-- centered the content in div -->
+                <center>
+                    <!-- make a div with a collum size of 6; while its background is light, with its content paddled 4, dark text, and div named with an id "input" -->
+                    <div class="col-6 bg-light p-4 text-dark" id="input">
+                        <!-- make label -->
+                        <label for="country">type country name here:</label>
+                        <!-- make a dropdown menu for all countries in East Asia -->
+                        <select id="country" class="form-control">
+                            <!-- option 1 -->
+                            <option value="The Middle Kingdom">China</option>
+                            <!-- option 2 -->
+                            <option value="Tiger of Asia">South Korea</option>
+                            <!-- optpion 3 -->
+                            <option value="Hermit Kingdom">North Korea</option>
+                            <!-- option 4 -->
+                            <option value="The Land of the Rising Sun">Japan</option>
+                            <!-- option 5 -->
+                            <option value="Land of the Eternal Blue Sky">Mongolia</option>
+                        </select>
+                        <!-- make a green button with Enter on it -->
+                        <input type="button" py-click="inputUser" class="form-control btn btn-success mt-4" value="Enter">
+                    </div>
+                </center>
+            </div>
+        </div>
+        <!-- centered div -->
+        <center>
+            <!-- make a div for the output from main.py -->
+            <div id="output" class="bg-info text-dark mt-5 p-2">
+
+            </div>
+        </center>
+
+    <!-- connects index.html file to main.py -->
+    <py-script src="Seatwork1.py"></py-script>
+</body>
+</html>
